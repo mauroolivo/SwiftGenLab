@@ -1,0 +1,20 @@
+xcassets:
+  inputs:
+    - SwiftGenLab/Assets.xcassets
+    - SwiftGenLab/Colors.xcassets
+    - SwiftGenLab/Icons.xcassets
+  outputs:
+    - templateName: swift5
+      output: SwiftGenLab/Generated/SwiftGen/Assets+Generated.swift
+
+strings:
+  inputs:
+    - SwiftGenLab/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: SwiftGenLab/Generated/SwiftGen/L10n+Generated.swift
+    - templatePath: SwiftGenLab/Templates/strings-structured-swift5-lab.stencil
+      output: SwiftGenLab/Generated/SwiftGen/StringsLab+Generated.swift
+      params:
+        enumName: StringsLab
+        publicAccess: true
